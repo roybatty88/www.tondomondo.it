@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="description" content="GIOCATTOLI ecologici, ALIMENTI altamente selezionati, ABITI e ACCESSORI in materiale biologico
+COSMESI naturale, LIBRI per uno stile di vita consapevole, ARREDI ecocompatibili, ATTIVITA' e LABORATORI">
+<meta http-equiv="keywords" content="giocattoli ecologici, alimenti altamente selezionati, abiti e accessori, cosmesi naturale, libri, arredi ecocompatibili, attività e laboratori">
+<title>Tondomondo - l'abbraccio di tutti alla vita che cresce</title>
+
+  <!-- COMMON CSS -->
+	<!--#include virtual="includes/common_css.shtml" -->
+  <!-- COMMON CSS FINE --><!-- 
+
+Per saperne di più sui commenti condizionali intorno ai tag html all'inizio del file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Fate quanto segue se utilizzate una build personalizzata di modernizr (http://www.modernizr.com/):
+* inserite qui il collegamento al vostro codice js
+* rimuovete il collegamento sotto a html5shiv
+* aggiungete la classe "no-js" ai tag html in alto
+* potete anche rimuovere il collegamento a respond.min.js se avete incluso Polyfill MQ nella vostra build modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <!-- COMMON JS -->
+	<!--#include virtual="includes/common_js.shtml" -->
+  <!-- COMMON JS FINE -->
+  
+</head>
+<body>
+<div class="gridContainer clearfix landingPage origami">
+  <div id="header"><img src="img/logo-piccolo.jpg" alt="Logo Tondomondo"></div>
+  <div id="top">
+  
+  <!-- MENU TOP -->
+  <!--#include virtual="includes/navMenu.shtml" -->
+  <!-- MENU TOP FINE-->
+
+<!--  <img src="img/home_w_low.png" alt="origami"></a></div>
+--><!--  <div id="menuLeft"><img src="img/numeri.png" alt="numeri"></div>
+-->  <div id="content">
+
+
+
+  </div>
+<div id="text">
+<section class="origami">
+  <span id="imgOrigami"><img src="img/istruzioni_origami.jpg" title="razzo" name="lancio del razzo"></span><p>L'origami è l'arte giapponese di piegare la carta e la gru è uno dei simboli più importanti della tradizione nipponica. Simbolo di felicità e longevità, viene realizzata sia per se stessi sia per gli altri oppure come offerta agli dei, nella speranza di veder esaudite le proprie preghiere... <br>
+  Ancora oggi regalare una gru o addirittura mille è un gesto di profondo affetto, perché richiede bravura, tempo e dedizione ed equivale a dire: 
+  <span>&quot;Ho pensato a te per tutto questo tempo, sei importante&quot;.</span>
+  </section>
+</div>
+<!--  <div id="menuright"><img src="img/home_w_low.png" alt="airone"></div>
+-->  <div id="bottom"><h4 class="cinnamon"><span>TONDOMONDO</span> l'abbraccio di tutti alla vita che cresce<br>
+ via San Calocero 27, Milano</h4></div>
+  <div id="footer"><div class="left">Tondomondo 2014 ©</div><div class="right">right</div></div>
+</div>
+</body>
+</html>

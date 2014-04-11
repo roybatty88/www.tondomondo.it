@@ -1,0 +1,5 @@
+<script src="../libs/js/jquery-1.11.0.min.js"></script>
+<script src="../assets/respond.min.js"></script>
+<script src="../assets/countdown/jquery.plugin.js"></script>
+<script src="../libs/js/jquery.countdown.js"></script>
+<script src="../libs/js/default.js"></script>

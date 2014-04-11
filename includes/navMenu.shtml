@@ -1,0 +1,6 @@
+  <nav>
+<ul id="menu">
+    <li><a href="index.shtml"><img src="../img/home_w_low.png" alt="home"></a></li>
+    <li><a href="origami.shtml"><img src="../img/airone_logo.png" alt="origami" width="86" height="76"></a></li>
+</ul>
+  </nav>

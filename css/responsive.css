@@ -1,0 +1,530 @@
+@charset "UTF-8";
+/* Contenuto fluido semplice
+   Nota: per i contenuti di tipo fluido è necessario rimuovere gli attributi di altezza e larghezza del contenuto dal codice HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 non supporta max-width, quindi viene usata per impostazione predefinita la larghezza 100% */
+.ie6 img {
+	width:100%;
+}
+.left {
+float:left;
+}
+.right {
+float:right;
+}
+/*
+	Proprietà griglia fluida Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		12;
+	dw-num-cols-tablet:		12;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	12;
+	
+	Ispirato da "Responsive Web Design" di Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	e Golden Grid System di Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Layout mobile: 480 px e inferiori. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+/*	width: 95.1428%; */
+	width: 100%;
+	padding-left: 0.4285%;
+	padding-right: 0.4285%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+    background-color: #FFFFFF;
+    border-color: #FF0000;
+    border-style: solid;
+    border-width: 0 0 5px;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+div.gridContainer div#header img {
+	margin:10px auto;
+}
+#top {
+    border-top: 1px solid #FFFFFF;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    text-align: right;
+    width: 100%;
+	padding:5px;
+}
+#menuLeft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 100%;
+	display: none;
+}
+div.landingPage div#content {
+	left: auto;
+	top: 0px;
+	right: auto;
+	bottom: 0px;
+	text-align: center;
+}
+div.gridContainer.origami div#top div#content {
+	display:none;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content > a{
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+}
+div.landingPage div#content img { 
+  width: 80%;
+ }
+#bottom {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menuright {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 100%;
+	display: none;
+}
+div#bottom h5.cinnamon {
+	text-align:center;
+    font:130%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+}
+div#bottom h4.cinnamon {
+	text-align:center;
+    font:145%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+	width:95%;
+}
+div#bottom .cinnamon span {
+	color:red;
+}
+div#top div#text section.origami p {
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font: 150%/1.2em 'cinnamon_cakeregular',arial,sans-serif;
+    margin: 0 0.5em;
+    text-align: center;
+    width: 88%;
+}
+div#top div#text section.origami p span {
+    clear: both;
+    color: #FF0000;
+    display: block;
+}
+div section.origami span#imgOrigami {
+    float: left;
+    width: 96%;
+}
+div section.origami a.left {
+	height: 100%;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+	clear:both;
+}
+div section.origami a.left img {
+}
+div.gridContainer div#top a {
+	width:80%;
+}
+div.gridContainer div#content div.titolini {
+	
+}
+#text {
+	clear: both;
+	float: left;	
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+div.gridContainer div#top nav ul#menu li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+/*    line-height: 30px;
+*/    padding: 0;
+    text-decoration: none;
+  /*  width: 135px;*/ /* 150px - 15px (padding) */
+/*    height: 30px;
+*/	text-align:center;
+	width:100%;
+}
+div.gridContainer div#top nav ul#menu li a:hover {
+	color:#d2d2d2;
+	text-decoration:underline;
+}
+/* Layout tablet: da 481 px a 768 px. Eredita stili da: Layout mobile. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+/*	width: 95.1428%; */
+	width:100%;
+	padding-left: 0.4285%;
+	padding-right: 0.4285%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+    background-color: #FFFFFF;
+    border-color: #FF0000;
+    border-style: solid;
+    border-width: 0 0 5px;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+div.gridContainer div#header img {
+	margin:15px auto;
+}
+#top {
+    border-top: 1px solid #FFFFFF;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    text-align: right;
+    width: 100%;
+	padding:7px;
+}
+#menuLeft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 24.3243%;
+	display: none;
+}
+div.landingPage div#content {
+	padding:15px 0 0 0;
+}
+div.gridContainer.origami div#top div#content {
+	display:none;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content > a{
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+}
+div.landingPage div#content img { 
+  width: 80%;
+ }
+#bottom {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menuright {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 24.3243%;
+	display: none;
+}
+div#bottom h5.cinnamon {
+	text-align:center;
+    font:140%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+}
+div#bottom h4.cinnamon {
+	text-align:center;
+    font:155%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+}
+div#bottom .cinnamon span {
+	color:red;
+}
+div#top div#text section.origami p {
+    clear: none;
+    color: #FFFFFF;
+    float: left;
+    font: 150%/1.2em 'cinnamon_cakeregular',arial,sans-serif;
+    margin: 0 .5em;
+    text-align: center;
+    width: 48%;
+}
+div#top div#text section.origami p span {
+    clear: both;
+    color: #FF0000;
+    display: block;
+}
+div section.origami span#imgOrigami {
+	float:left;
+	width:48%;
+}
+div section.origami a.left{
+	height: 65%;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 65%;
+	float:left;
+	clear:none;
+}
+div section.origami a.left img  {
+	float:left;
+}
+div.gridContainer div#top a {
+	width:80%;
+}
+div.gridContainer div#content div.titolini {
+	
+}
+#text {
+	clear: both;
+	float: left;	
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+div.gridContainer div#top nav ul#menu li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+/*    line-height: 30px;
+*/    padding: 0;
+    text-decoration: none;
+    width: 135px; /* 150px - 15px (padding) */
+/*    height: 30px;
+*/	text-align:center;
+	width:100%;
+}
+div.gridContainer div#top nav ul#menu li a:hover {
+	color:#d2d2d2;
+	text-decoration:underline;
+}
+}
+
+/* Layout desktop: da 769 px a 1232 px max.  Eredita stili da: Layout mobile e Layout tablet. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+/*	width: 95.1428%; */
+	width:100%;
+/*	max-width: 1232px;	*/
+	padding-left: 0.4285%;
+	padding-right: 0.4285%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+    background-color: #FFFFFF;
+    border-color: #FF0000;
+    border-style: solid;
+    border-width: 0 0 5px;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+div.gridContainer div#header img {
+	margin:20px auto;
+}
+#top {
+    border-top: 1px solid #FFFFFF;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    padding: 10px 0 0;
+    text-align: right;
+    width: 100%;
+}
+#menuLeft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 15.9159%;
+	display: block;
+}
+div.landingPage div#content {
+	padding:100px 0 0 0;
+}
+div.gridContainer.origami div#top div#content {
+	display:none;
+}
+#content {
+	clear: none;
+	float: left;
+	margin-left: 0.9009%;
+	width: 66.3663%;
+	display: block;
+}
+#content > a{
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+}
+div.landingPage div#content img { 
+  width: 80%;
+ }
+#bottom {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#menuright {
+	clear: none;
+	float: left;
+	margin-left: 0.9009%;
+	margin-top:20px;
+	width: 15.9159%;
+	display: block;
+}
+div#bottom h5.cinnamon {
+	text-align:center;
+    font:150%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+}
+div#bottom h4.cinnamon {
+	text-align:center;
+    font:165%/1.2em 'cinnamon_cakeregular', arial, sans-serif;
+	color:white;
+}
+div#bottom .cinnamon span {
+	color:red;
+}
+div#top div#text section.origami p {
+    clear: none;
+    color: #FFFFFF;
+    float: left;
+    font: 190%/1.2em 'cinnamon_cakeregular',arial,sans-serif;
+    margin: 1em 0.5em 0;
+    text-align: center;
+    width: 48%;
+}
+div#top div#text section.origami p span {
+	clear:both;
+	color:red;
+}
+div section.origami span#imgOrigami {
+	float:left;
+	width:49%;
+}
+div section.origami a.left{
+	height: 65%;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 65%;
+	float:left;
+	clear:none;
+}
+div section.origami a.left img  {
+	float:left;
+}
+div.gridContainer div#top a {
+	width:80%;
+}
+div.gridContainer div#content div.titolini {
+	
+}
+#text {
+	clear: both;
+	float: left;	
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+div.gridContainer div#top nav ul#menu li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+/*    line-height: 30px;
+*/    padding: 0;
+    text-decoration: none;
+ /*   width: 135px;+/ /* 150px - 15px (padding) */
+/*    height: 30px;
+*/	text-align:center;
+	width:100%;
+}
+div.gridContainer div#top nav ul#menu li a:hover {
+	color:#d2d2d2;
+	text-decoration:underline;
+}
+}
